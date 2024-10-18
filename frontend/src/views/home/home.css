@@ -1,0 +1,14 @@
+.container-sm {
+  padding-top: 110px;
+}
+
+
+.blog-main-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  color: rgb(205, 140, 208);
+  text-align:start;
+  background-color: rgba(34, 34, 34, 0.9);
+}

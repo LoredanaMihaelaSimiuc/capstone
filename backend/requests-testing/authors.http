@@ -1,0 +1,69 @@
+
+### OTTENERE TUTTI GLI AUTORI
+GET http://localhost:5000/authors
+
+
+### OTTENERE UN AUTORE
+GET GET http://localhost:5000/authors/{authorId}
+
+
+
+### CREARE UN AUTORE
+POST http://localhost:5000/authors
+Content-Type: application/json
+
+{
+  "name": "Mario",
+  "surname": "Rossi",
+  "email": "mario.rossi@example.com",
+  "password": "password123",
+  "birthDate": "1985-03-15",
+  "avatar": "https://picsum.photos/200/200"
+}
+
+
+### MODIFICARE UN AUTORE
+PUT http://localhost:5000/authors/{authorId}
+Content-Type: application/json
+
+{
+  "name": "Mario",
+  "surname": "Verdi",
+  "email": "mario.verdi@example.com",
+  "birthDate": "1985-03-15",
+  "avatar": "https://picsum.photos/200/200"
+}
+
+
+### CANCELLARE UN SOLO AUTORE
+DELETE http://localhost:5000/authors/{authorId}
+
+
+### CANCELLARE TUTTI GLI AUTORI
+DELETE http://localhost:5000/authors
+
+
+
+### REGISTRAZIONE NUOVO UTENTE
+POST http://localhost:5000/authors/register
+Content-Type: application/json
+
+{
+    "name": "Sara",
+    "surname": "Casotto",
+    "email": "sara@casotto.com",
+    "password": "password123",
+    "birthDate": "1992-11-20",
+    "avatar": "https://picsum.photos/200/200"
+}
+
+
+### LOGIN UTENTE ESISTENTE
+POST http://localhost:5000/authors/login
+Content-Type: application/json
+
+{
+    "email": "sara@casotto.com",
+    "password": "password123"
+}
+
